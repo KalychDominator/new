@@ -1,0 +1,152 @@
+*{padding: 0px; margin: 0px;}
+
+header{
+  width: 100%;
+  max-width: 1400px;
+  background-image: url("layer.jpg");
+  background-size: cover;
+  height: 481px;
+  margin: 0px auto;
+}
+header h1{
+  display: inline-block;
+  color: white;
+  font-size: 4em;
+  font-weight: normal;
+  margin: 70px 17.857142857142857142857142857143%;
+}
+header h1 span{border-bottom: 4px solid #344DC5} 
+
+.wrapper{
+  width: 100%;
+  max-width: 1400px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+}
+
+.ctg{height: auto;}
+
+.ctg li{
+  list-style-type: none;
+  margin-top: 20px;
+  border-bottom: 1px solid silver;
+  font-size: 1.5em;
+}
+
+.ctg li a{
+  text-decoration: none;
+  color: black;
+
+}
+.ctg li a:hover{color:#344DC5}
+
+nav h2{
+  border-bottom: 2px solid #344DC5;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+
+.tags li{
+  display: inline-block;
+  border: 1px solid black;
+  padding: 10px 30px;
+  font-size: 1.5em;
+  list-style-type: none;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.2s color linear, 0.2s background linear;
+}
+.tags li:hover{
+  background: #344DC5;
+  color: white;
+}
+.photo{
+  height: 500px;
+  color: #344DC5;
+}
+.photo img{
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 100px auto 0px;
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .sign{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
+}
+.sign a{text-decoration: none; color:#344DC5;}
+.text{
+  display: inline-block;
+  color:black;
+  font-size: 1.8em;
+  margin-left: 80px;
+  font-weight: bold;
+}
+.photo input{
+  width: 100px;
+  height: 40px; 
+  margin-top: 15px;
+  background: #344DC5;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 70px;
+}
+
+footer{
+  grid-column: 1/3;
+  width: 100%;
+  height: 100%;
+  background-image: url("Rectangle 16.jpg");
+  background-size: cover;
+  margin-top: 100px;
+}
+footer .str{
+  display: block;
+  width: 300px;
+  height: 60px;
+  text-indent: 10px;
+  font-size: 2em;
+}
+.email{
+  width: 360px;
+  display: flex;
+  justify-content:space-between;
+  margin: 100px auto;
+}
+.btn{
+  height: 65px;
+  width: 60px;
+  border: none;
+  background: #344DC5;
+}
+.all{
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+  @media screen and (max-width: 750px){
+    .wrapper{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    footer{
+      order: -1;
+    }
+    main{
+      margin-top: 50px;
+    }
+    .ctg, h2, .tags{
+      text-align: center;
+    } I
+  }
